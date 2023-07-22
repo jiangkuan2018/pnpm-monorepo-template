@@ -1,0 +1,14 @@
+{
+  "name": "pnpm-monorepo-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --filter=core build",
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm --stream --parallel --reporter=append-only --filter './packages/**' dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
