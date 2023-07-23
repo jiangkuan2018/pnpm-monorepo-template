@@ -6,7 +6,6 @@ import typescript from '@rollup/plugin-typescript'
 import terser from '@rollup/plugin-terser'
 import * as rimraf from 'rimraf'
 
-
 const development = process.env.ROLLUP_WATCH === 'true'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
